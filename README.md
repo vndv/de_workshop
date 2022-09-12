@@ -74,12 +74,14 @@
     Переходим в браузер и вводим localhost:3000
     Выбираем в подключение Clickhouse
 
-    так как все контейнеры находятся в одной сети нужно посмотреть адрес для Clickhouse
+    смотрим адрес для Clickhouse
     docker network ls 
     
-     находим de_workshop_etl_host
-     docker network inspect de_workshop_etl_host
-     находим контейнер de_workshop_clickhouse_1 и копируем IPv4Address
+    находим de_workshop_etl_host
+
+    docker network inspect de_workshop_etl_host
+
+    находим контейнер de_workshop_clickhouse_1 и копируем IPv4Address
 
   - Google sheet
     таблица с данными по менеджерам
