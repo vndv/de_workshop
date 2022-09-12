@@ -22,7 +22,9 @@
     cоздаем схему StarScheme/Snowflake 
     Необходимо написать скрипты для извлечения данных из источников и загрузки в хранилище
     либо воспользоваться любым ETL инструментом Pentaho/Talend/NiFi
-    отвечаем на вопросы:
+    Вводная статья, о том как писать пйплайны на [Python](https://knowtechie.com/how-to-build-etl-pipelines-in-python/)
+
+    Отвечаем на вопросы:
 
     1. Overview (обзор ключевых метрик)
         - Total Sales
