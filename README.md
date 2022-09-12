@@ -22,7 +22,7 @@
     cоздаем схему StarScheme/Snowflake 
     Необходимо написать скрипты для извлечения данных из источников и загрузки в хранилище
     либо воспользоваться любым ETL инструментом Pentaho/Talend/NiFi
-    
+
   Вводная статья, о том как писать пйплайны на 
   [Python](https://knowtechie.com/how-to-build-etl-pipelines-in-python/)
 
@@ -96,6 +96,6 @@
    docker-compose stop - остановить все контейнеры и сохранить данные
    docker-compose down - удалить все контейнеры
 
-
+**[Видеоинструкция](https://youtu.be/GQI7TnlgdRY)**
 
 
