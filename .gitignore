@@ -58,3 +58,6 @@ Temporary Items
 
 data/
 venv
+
+__pycache__/
+*.py[cod]
