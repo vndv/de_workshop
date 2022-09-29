@@ -35,6 +35,7 @@ services:
   clickhouse:
     image: yandex/clickhouse-server:latest
     ports:
+      - "9000:9000"
       - "8123:8123"
     restart: always
     volumes:
