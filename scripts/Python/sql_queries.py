@@ -5,21 +5,29 @@ from db_credentials import my_sql_db_config, clickhouse_db_config
 clickhouse_client = Client(**clickhouse_db_config)
 con = mysql.connector.connect(**my_sql_db_config)
 
+cols = ['Rerurned','Order_id']
+
 
 cursor = con.cursor()
 
 my_sql_extract = """
 SELECT
-    Rerurned
-    ,Order_id
+    *
 FROM
     returns
 """
 
-cursor.execute(my_sql_extract)
+cur = cursor.execute(my_sql_extract)
 
-clickhouse_client.execute("INSERT INTO SAE.returns (Rerurned,Order_id) VALUES",
-                         ((Rerurned,Order_id ) for Rerurned,Order_id in cursor))
+# clickhouse_client.execute("INSERT INTO SAE.returns (*) VALUES",
+#                          ((Rerurned,Order_id ) for Rerurned,Order_id in cursor))
+
+
+clickhouse_client.execute("INSERT INTO SAE.returns  VALUES",
+                            ((cur)for cur in cursor)
+                                )
+
+
 
 cursor.close()
 con.close()
