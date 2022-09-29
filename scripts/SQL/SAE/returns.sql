@@ -1,8 +1,0 @@
-CREATE DATABASE IF NOT EXISTS SAE ENGINE = Atomic;
-
-CREATE TABLE IF NOT EXISTS SAE.returns(
-   Rerurned   VARCHAR NOT NULL 
-  ,Order_id   VARCHAR NOT NULL
-)
-ENGINE = MergeTree()
-ORDER BY Order_id;
