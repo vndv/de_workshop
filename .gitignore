@@ -60,7 +60,7 @@ Temporary Items
 *.code-workspace
 
 data/
-venv
-
 __pycache__/
 *.py[cod]
+venv
+
