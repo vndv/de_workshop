@@ -11,8 +11,8 @@ ORDER BY Order_id;
 CREATE TABLE IF NOT EXISTS SAE.orders (
    Row_ID        UInt32 NOT NULL
   ,Order_ID      String NOT NULL
-  ,Order_Date    String NOT NULL 
-  ,Ship_Date     String NOT NULL
+  ,Order_Date    Date  NOT NULL 
+  ,Ship_Date     Date  NOT NULL
   ,Ship_Mode     String NOT NULL
   ,Customer_ID   String NOT NULL
   ,Customer_Name String NOT NULL
@@ -20,16 +20,16 @@ CREATE TABLE IF NOT EXISTS SAE.orders (
   ,Country       String NOT NULL
   ,City          String NOT NULL
   ,State         String NOT NULL
-  ,Postal_Code   Int32 
+  ,Postal_Code   UInt32  
   ,Region        String NOT NULL
   ,Product_ID    String NOT NULL
   ,Category      String NOT NULL
   ,SubCategory   String NOT NULL
   ,Product_Name  String NOT NULL
-  ,Sales         Float32 
-  ,Quantity      Int32
-  ,Discount      Float32
-  ,Profit        Float32 
+  ,Sales         Decimal(6,4)
+  ,Quantity      UInt32
+  ,Discount      Decimal(6,4)
+  ,Profit        Decimal(6,4)  
 )
 ENGINE = MergeTree()
 ORDER BY Order_Date;
