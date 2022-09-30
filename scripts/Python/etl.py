@@ -8,9 +8,8 @@ from db_credentials import pg_db_config,my_sql_db_config,clickhouse_db_config
 settings = {'input_format_null_as_default': True, 'types_check': True}
 
 class ETLBase:
-    def __init__(self,connection_source,source_table,target_table,target_schema):
+    def __init__(self,connection_source,target_table,target_schema):
         self.connection_source=connection_source,
-        self.source_table=source_table,
         self.target_table=target_table,
         self.target_schema=target_schema,
         self.target_table=target_table,
