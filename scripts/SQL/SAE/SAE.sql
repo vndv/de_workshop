@@ -26,10 +26,10 @@ CREATE TABLE IF NOT EXISTS SAE.orders (
   ,Category      String NOT NULL
   ,SubCategory   String NOT NULL
   ,Product_Name  String NOT NULL
-  ,Sales         Decimal(6,4)
+  ,Sales         Decimal(9,4) NOT NULL
   ,Quantity      UInt32
-  ,Discount      Decimal(6,4)
-  ,Profit        Decimal(6,4)  
+  ,Discount      Decimal(4,2) NOT NULL
+  ,Profit        Decimal(21,16) NOT NULL
 )
 ENGINE = MergeTree()
 ORDER BY Order_Date;
