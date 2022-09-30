@@ -49,10 +49,12 @@ class ETLBase:
         cursor.execute(sql)
         data = cursor.fetchall()
 
+        clickhouse_client.execute(f"TRUNCATE TABLE {self.target_schema[0]}.{self.target_table[0]} ")
+
         clickhouse_client.execute(f"INSERT INTO {self.target_schema[0]}.{self.target_table[0]}  VALUES",
                             ((cur)for cur in data)
                                 )
-        
+
         cursor.close()
     
 
