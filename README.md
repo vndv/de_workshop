@@ -96,6 +96,8 @@
    docker-compose stop - остановить все контейнеры и сохранить данные
    docker-compose down - удалить все контейнеры
 
-**[Видеоинструкция](https://youtu.be/GQI7TnlgdRY)**
+**[Видеоинструкция часть 1](https://youtu.be/GQI7TnlgdRY)**
+
+**[Видеоинструкция часть 2](https://youtu.be/zdc3tvLVOvs)**
 
 
