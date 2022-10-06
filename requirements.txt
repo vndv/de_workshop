@@ -1,3 +1,4 @@
-clickhouse-driver==0.2.4
-mysql-connector-python==8.0.30
-psycopg2==2.9.3
+clickhouse-driver
+mysql-connector-python
+psycopg2-binary
+apache-airflow
