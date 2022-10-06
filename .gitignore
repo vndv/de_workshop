@@ -63,4 +63,5 @@ data/
 __pycache__/
 *.py[cod]
 venv
+.idea
 
