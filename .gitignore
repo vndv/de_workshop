@@ -64,4 +64,6 @@ __pycache__/
 *.py[cod]
 venv
 .idea
+/logs/
+/plugins/
 
