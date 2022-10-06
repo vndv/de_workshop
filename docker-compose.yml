@@ -1,6 +1,6 @@
 version: '3.9'
 services:
-  postgres:
+  de_postgres:
     image: postgres:13.3
     restart: always
     environment:
@@ -13,8 +13,7 @@ services:
       - postgresdb:/var/lib/postgresql/data
     ports:
       - "5432:5432"
-    networks:
-      - etl_host
+
 
   mysql:
     image: mysql:latest
@@ -29,8 +28,7 @@ services:
       - mysqldb:/var/lib/mysql
     ports:
       - "3306:3306"
-    networks:
-      - etl_host
+
 
   clickhouse:
     image: yandex/clickhouse-server:latest
@@ -40,8 +38,7 @@ services:
     restart: always
     volumes:
       - ./clickhouse/data/:/var/lib/clickhouse
-    networks:
-      - etl_host
+
 
   metabase:
     build: 
@@ -52,16 +49,14 @@ services:
     restart: always
     volumes:
       - metabase-data:/metabase-data
-    networks:
-      - etl_host
+
 
 volumes:
   mysqldb:
   postgresdb:
   metabase-data:
 
-networks:
-  etl_host:
-    driver: bridge
-
-
+networks: 
+  default:
+    external:
+      name: external-example
