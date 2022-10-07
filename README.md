@@ -100,4 +100,6 @@
 
 **[Видеоинструкция часть 2](https://youtu.be/zdc3tvLVOvs)**
 
+**[Видеоинструкция часть 3](https://youtu.be/hGaKychQXMc)**
+
 
