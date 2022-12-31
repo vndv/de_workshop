@@ -20,7 +20,7 @@ default_args = {
 dag = DAG(
     dag_name,
     default_args=default_args,
-    schedule_interval='* * * * *',
+    schedule_interval='*/2 * * * *',
     catchup=False,
 )
 
@@ -35,3 +35,7 @@ returns = BashOperator(
     bash_command='python /opt/airflow/Python/returns.py',
     dag=dag,
 )
+
+
+
+[orders, returns]
