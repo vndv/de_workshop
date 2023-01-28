@@ -11,8 +11,8 @@ ORDER BY Order_id;
 CREATE TABLE IF NOT EXISTS SAE.orders (
    Row_ID        UInt32 NOT NULL
   ,Order_ID      String NOT NULL
-  ,Order_Date    Date  NOT NULL 
-  ,Ship_Date     Date  NOT NULL
+  ,Order_Date    String  NOT NULL 
+  ,Ship_Date     String  NOT NULL
   ,Ship_Mode     String NOT NULL
   ,Customer_ID   String NOT NULL
   ,Customer_Name String NOT NULL
