@@ -21,6 +21,5 @@ table_list = {
 
 if __name__ == "__main__":
     for sql, table in table_list.items():
-        instance = table + "_instance"
         instance = ETLBase(table, "DDS", "SAE", "orders")
         instance.clickhouse_copy(dwh, source, sql)

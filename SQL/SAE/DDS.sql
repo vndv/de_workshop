@@ -31,6 +31,7 @@ ORDER BY cust_id;
  
 CREATE TABLE IF NOT EXISTS DDS.geo_dim(
      geo_id      UInt64 NOT NULL,
+     Region      String NOT NULL,
      country     String NOT NULL,
      city        String NOT NULL,
      state       String NOT NULL,
