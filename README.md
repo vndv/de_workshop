@@ -102,4 +102,6 @@
 
 **[Видеоинструкция часть 3](https://youtu.be/hGaKychQXMc)**
 
+**[Видеоинструкция часть 4](https://youtu.be/RAXdsNWlHaI)**
+
 
