@@ -1,4 +1,5 @@
 # Data Engineering workshop
+# Deprecated
 
 ## Цели воркшопа
    
